@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Telefonica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header-bg">
+    <div class="header container">
+      <h1 class="titulo">Agenda Telefonica</h1>
+    </div>
+  </div>
+
+  <main class="container">
+    <h2>Lista telefonica</h2>
+    <div class="form">
+      <div class="nome">
+        <label for="nome">Nome</label>
+        <input data-input="nome" type="text" placeholder="Digite o nome">
+      </div>
+      <div class="sobrenome">
+        <label for="sobrenome">Sobrenome</label>
+        <input data-input="sobrenome" type="text" placeholder="Digite o sobrenome">
+      </div>
+      <div class="email">
+        <label for="nome">Telefone</label>
+        <input data-input="telefone" type="text" placeholder="Digite o telefone">
+      </div>
+      <button data-btn="adicionar" id="btnAdicionar" type="button">Adicionar Contato</button>
+    </div>
+    <table class="table container">
+      <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Telefone</th>
+        <th>Ações</th>
+      </tr>
+    
+    </table>
+  </main>
+  <div class="modal_container">
+    <div class="modal_form">
+      <h2 id="titulo_alterar">Alterar contato</h2>
+      <input data-alter="nome" type="text" placeholder="Digite o novo nome">
+      <input data-alter="sobrenome" type="text" placeholder="Novo sobrenome">
+      <input data-alter="telefone" type="text" placeholder="Novo Telefone">
+      <button data-btn="alterar" id="alterar" type="button">Alterar</button>
+      <button id="closeModal" data-btn="closeModal" type="button">X</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
